@@ -131,7 +131,7 @@ public class GameScreen implements Screen {
         float accelX = Gdx.input.getAccelerometerY();
 
         // Movemos la paleta según la inclinación (invertido para Android)
-        paddleX -= accelX * 10;
+        paddleX -= accelX * 7;
 
         // Evitamos que la paleta se salga de los bordes
         if (paddleX < 0) paddleX = 0;
